@@ -1,0 +1,27 @@
+# Created with WinGet Releaser using komac v2.11.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: Odamex.Odamex
+PackageVersion: 11.4.0
+InstallerLocale: en-US
+InstallerType: inno
+Scope: machine
+InstallerSwitches:
+  Custom: /ALLUSERS
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+ProductCode: '{2E517BBB-916F-4AB6-80E0-D4A292513F7A}_is1'
+ReleaseDate: 2025-04-17
+AppsAndFeaturesEntries:
+- Publisher: Odamex Development Team
+  ProductCode: '{2E517BBB-916F-4AB6-80E0-D4A292513F7A}_is1'
+ElevationRequirement: elevatesSelf
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\Odamex'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://github.com/electricbrass/odamex/releases/download/11.4.0/odamex-win-11.4.0.exe
+  InstallerSha256: FCE705D9F05B0255B560C4412A05A49AB4D391E7D306BD470F8652F528CD37D0
+ManifestType: installer
+ManifestVersion: 1.9.0
